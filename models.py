@@ -17,4 +17,4 @@ class bus (SQLModel, table=True):
 class destino (SQLModel, table=True):
     id: int =(default=None, primary_key=True)
     lugar: str
-    bus_id: int Field(foreign_key="bus.id")
+    bus_id: int = Field(foreign_key="bus.id")
